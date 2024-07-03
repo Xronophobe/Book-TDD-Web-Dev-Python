@@ -4,8 +4,8 @@ import unittest
 from book_tester import ChapterTest
 
 class Chapter16Test(ChapterTest):
-    chapter_name = 'chapter_spiking_custom_auth'
-    previous_chapter = 'chapter_deploying_validation'
+    chapter_name = 'chapter_18_spiking_custom_auth'
+    previous_chapter = 'chapter_17_second_deploy'
 
     def test_listings_and_commands_and_output(self):
         self.parse_listings()

@@ -17,9 +17,9 @@ CHAPTERS = [
     "chapter_14_simple_form",
     "chapter_15_advanced_forms",
     "chapter_16_javascript",
-    "chapter_deploying_validation",
+    "chapter_17_second_deploy",
     # part 3
-    "chapter_spiking_custom_auth",
+    "chapter_18_spiking_custom_auth",
     "chapter_mocking",
     "chapter_fixtures_and_wait_decorator",
     "chapter_server_side_debugging",

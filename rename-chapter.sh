@@ -7,7 +7,10 @@ NEW_NAME=$2
 
 git mv "$OLD_CHAPTER.asciidoc" "$NEW_NAME.asciidoc"
 mv "$OLD_CHAPTER.html" "$NEW_NAME.html" || touch "$NEW_NAME.html"
-git mv "tests/test_$OLD_CHAPTER.py" "tests/test_$NEW_NAME.py"
+
+if [ -e "tests/test_$OLD_CHAPTER.py" ]; then
+    git mv "tests/test_$OLD_CHAPTER.py" "tests/test_$NEW_NAME.py"
+fi
 
 git mv "source/$OLD_CHAPTER" "source/$NEW_NAME"
 
